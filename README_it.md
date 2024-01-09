@@ -6,13 +6,13 @@ Interfaccia utente web minimale per AI Chat Free.
 
 Live demo: [AI Chat Free](https://www.geminiprochat.com)
 
-[![image](https://github.com/babaohuang/GeminiProChat/assets/559171/d02fd440-401a-410d-a112-4b10935624c6)](https://www.geminiprochat.com)
+[![image](https://github.com/ievjai/aichatfree/assets/559171/d02fd440-401a-410d-a112-4b10935624c6)](https://www.geminiprochat.com)
 
 ## Distribuire
 
 ### Distribuire Con Vercel(Consigliato)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/babaohuang/GeminiProChat&env=GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=gemini-pro-chat&repository-name=gemini-pro-chat&demo-title=Gemini%20Pro%20Chat&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Fgeminiprochat.com&demo-image=https%3A%2F%2Fgeminiprochat.com%2Ficon.svg)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ievjai/aichatfree&env=GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=gemini-pro-chat&repository-name=gemini-pro-chat&demo-title=Gemini%20Pro%20Chat&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Fgeminiprochat.com&demo-image=https%3A%2F%2Fgeminiprochat.com%2Ficon.svg)
 
 Clicca sul pulsante in alto e seguire le istruzioni per distribuire la tua copia dell'app.
 
@@ -51,7 +51,7 @@ docker run --name geminiprochat \
 -p 3000:3000 \
 -itd \
 -e GEMINI_API_KEY=your_api_key_here \
-babaohuang/geminiprochat:latest
+ievjai/aichatfree:latest
 ```
 Assicurati di sostituire `your_api_key_here` con la tua chiave API GEMINI.
 
@@ -64,7 +64,7 @@ Questo avvierà il servizio **geminiprochat**, accessibile da `http://localhost:
 | Name | Description | Required |
 | --- | --- | --- |
 | `GEMINI_API_KEY` | La tua chiave API per GEMINI. Puoi ottenerlo da [qui](https://makersuite.google.com/app/apikey). | **✔** |
-| `API_BASE_URL` | Custom base url for GEMINI API. Click [here](https://github.com/babaohuang/GeminiProChat?tab=readme-ov-file#solution-for-user-location-is-not-supported-for-the-api-use) to see when to use this. | ❌ |
+| `API_BASE_URL` | Custom base url for GEMINI API. Click [here](https://github.com/ievjai/aichatfree?tab=readme-ov-file#solution-for-user-location-is-not-supported-for-the-api-use) to see when to use this. | ❌ |
 | `HEAD_SCRIPTS` | Inserisci analisi o altri script prima di `</head>` della pagina | ❌ |
 | `PUBLIC_SECRET_KEY` | Stringa segreta per il progetto. Utilizzare per generare firme per le chiamate API | ❌ |
 | `SITE_PASSWORD` | Imposta la password per il sito, supporta più password separate da virgola. Se non impostato, il sito sarà pubblico | ❌ |
@@ -114,7 +114,7 @@ Questo progetto è ispirato e basato sul seguente progetto open source:
 
 ## Storia delle stelle
 
-[![Star History Chart](https://api.star-history.com/svg?repos=babaohuang/geminiprochat&type=Timeline)](https://star-history.com/#babaohuang/geminiprochat&Timeline)
+[![Star History Chart](https://api.star-history.com/svg?repos=ievjai/aichatfree&type=Timeline)](https://star-history.com/#ievjai/aichatfree&Timeline)
 
 ## Offrimi un caffè
 

@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  geminiprochat:
+  aichatfree:
     build: .
-    container_name: geminiprochat
+    container_name: aichatfree
     restart: always
     ports:
       - "3000:3000"
