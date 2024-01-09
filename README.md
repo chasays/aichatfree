@@ -6,8 +6,11 @@ AI Chat Free.
 
 Live demo: [AI Chat Free](https://www.aichatfree.com)
 
-
 fork: geminiprochat
+
+[x] add robots.txt
+[x] add google analyze to layout
+[ ] support gemini pro vision
 
 ## Deploy
 
