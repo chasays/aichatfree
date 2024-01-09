@@ -1,18 +1,19 @@
-# aichatfree
+# AI Chat Free
 
-English | [中文](README_cn.md) | [Italiano](README_it.md)
 
-Minimal web UI for AI Chat Free.
+AI Chat Free.
+
 
 Live demo: [AI Chat Free](https://www.aichatfree.com)
 
 
+fork: geminiprochat
 
 ## Deploy
 
 ### Deploy With Vercel(Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ievjai/aichatfree&env=GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=gemini-pro-chat&repository-name=gemini-pro-chat&demo-title=Gemini%20Pro%20Chat&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Fgeminiprochat.com&demo-image=https%3A%2F%2Fgeminiprochat.com%2Ficon.svg)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/ievjai/aichatfree&env=GEMINI_API_KEY&envDescription=Google%20API%20Key%20for%20GeminiProChat&envLink=https://makersuite.google.com/app/apikey&project-name=gemini-pro-chat&repository-name=gemini-pro-chat&demo-title=Gemini%20Pro%20Chat&demo-description=Minimal%20web%20UI%20for%20Gemini%20Pro.&demo-url=https%3A%2F%2Faichatfree.com&demo-image=https%3A%2F%2Faichatfree.com%2Ficon.svg)
 
 Just click the button above and follow the instructions to deploy your own copy of the app.
 
@@ -104,9 +105,13 @@ You can control the website through environment variables.
     pnpm run dev
    ```
 
-## Acknowledgements
+4. build product
 
-This project is inspired by and based on the following open-source project:
+   ```bash
+    pnpm build
+   ```
+5. run dist file
 
-- [ChatGPT-Demo](https://github.com/anse-app/chatgpt-demo) - For the foundational codebase and features.
-
+   ```bash
+    node dist/server/entry.mjs
+   ```
