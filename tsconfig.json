@@ -5,6 +5,7 @@
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "types": ["vite-plugin-pwa/info"],
+    "strictNullChecks": true,
     "paths": {
       "@/*": ["src/*"],
     },
