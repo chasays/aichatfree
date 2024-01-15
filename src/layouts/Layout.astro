@@ -1,8 +1,12 @@
 ---
 import { pwaInfo } from 'virtual:pwa-info'
+import { SITE } from "../config"
 
 export interface Props {
-  title: string;
+  title?: string;
+  author?: string;
+  description?: string;
+  ogImage?: string;
 }
 
 const { title } = Astro.props;

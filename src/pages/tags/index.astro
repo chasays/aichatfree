@@ -13,7 +13,7 @@ const posts = await getPublishPosts();
 let tags = getUniqueTags(posts);
 ---
 
-<Layout title={`tag | ${SITE.title}`}>
+<Layout title={`标签 | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main>
     <ul data-testid="tag-list">

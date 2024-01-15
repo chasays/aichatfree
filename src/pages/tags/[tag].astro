@@ -37,7 +37,7 @@ const posts = await getPublishPosts();
 const tagPosts = getSortedPosts(getPostsByTag(posts, tag));
 ---
 
-<Layout title={`tag:${tag} | ${SITE.title}`}>
+<Layout title={`标签:${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main>
     <ul>
