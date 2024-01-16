@@ -3,8 +3,8 @@ import type { SocialObjects } from "./types";
 export const SITE = {
   website: "https://aichatfree.info",
   author: "aichat",
-  desc: "",
-  title: "",
+  desc: "ai chat free online",
+  title: "aichatfree.info",
   ogImage: "/images/android-chrome-192x192.png",
   lightAndDarkMode: true,
   postPerPage: 10,

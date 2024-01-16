@@ -118,3 +118,8 @@ You can control the website through environment variables.
    ```bash
     node dist/server/entry.mjs
    ```
+
+## output : server
+
+server : `http://localhost:3000/`
+static: all files are staticly served from the `./dist` directory

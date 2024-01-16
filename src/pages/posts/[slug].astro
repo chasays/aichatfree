@@ -25,7 +25,7 @@ export async function getStaticPaths() {
   }));
   return [...postResult, ...pagePaths];
 }
-
+export const prerender = true;
 const { slug } = Astro.params;
 const { post } = Astro.props;
 

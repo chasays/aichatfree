@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Main from "../../layouts/Main.astro";
-import Header from "../../components/Header.astro";
+import Header from "../../components/HeaderMini.astro";
 import Footer from "../../components/Footer.astro";
 import Card from "../../components/Card";
 import { getUniqueTags } from "../../utils/getUniqueTags";
@@ -29,7 +29,7 @@ export async function getStaticPaths() {
     };
   });
 }
-
+export const prerender = true;
 const { tag } = Astro.props;
 
 const posts = await getPublishPosts();
@@ -37,7 +37,7 @@ const posts = await getPublishPosts();
 const tagPosts = getSortedPosts(getPostsByTag(posts, tag));
 ---
 
-<Layout title={`标签:${tag} | ${SITE.title}`}>
+<Layout title={`tags:${tag} | ${SITE.title}`}>
   <Header activeNav="tags" />
   <Main>
     <ul>

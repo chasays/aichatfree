@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
+import Header from "../components/HeaderMini.astro";
 import Footer from "../components/Footer.astro";
 import LinkButton from "../components/LinkButton.astro";
 import Hr from "../components/Hr.astro";
@@ -20,23 +20,23 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
-  <!-- <Header /> -->
+  <Header />
   <main id="main-content">
     <section id="hero">
-      <!-- <p>
-        可以查看
+      <p>
+        see more
         <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed transition-all"
           href="/about"
         >
-          关于我
-        </LinkButton> 更多了解我。
-      </p> -->
+          AI Chat Free Online
+        </LinkButton> more detail.
+      </p>
       <!-- {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">社交媒体：</div>
+            <div class="social-links">social media</div>
             <Socials />
           </div>
         )
@@ -49,7 +49,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Selected articles</h2>
+            <h2>Selected Articles</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -66,7 +66,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     }
 
     <section id="recent-posts">
-      <h2>Recent articles</h2>
+      <h2>Recent Articles</h2>
       <ul>
         {
           sortedPosts.map(
