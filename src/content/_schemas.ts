@@ -10,7 +10,7 @@ export const blogSchema = z
     draft: z.boolean().optional(),
     tags: z.array(z.string()).default(['其它']),
     ogImage: z.string().optional(),
-    description: z.string(),
+    description: z.string().optional(),
   })
   .strict()
 
@@ -26,7 +26,7 @@ export const newsletterSchema = z
     draft: z.boolean().optional(),
     tags: z.array(z.string()).default(['newsletter']),
     ogImage: z.string().optional(),
-    description: z.string(),
+    description: z.string().optional(),
   })
   .strict()
 
