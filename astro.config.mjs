@@ -66,4 +66,9 @@ export default defineConfig({
       process.env.OUTPUT === 'netlify' && disableBlocks(),
     ],
   },
+  build: {
+    rollupOptions: {
+      external: ['@astrojs/rss']
+    }
+  }
 })
