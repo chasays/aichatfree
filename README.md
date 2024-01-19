@@ -59,6 +59,16 @@ Please make sure to replace `your_api_key_here` with your own GEMINI API key.
 
 This will start the **aichatfree** service, accessible at `http://localhost:3000`. 
 
+you can use watchtower to watch docker update.
+
+```sh
+docker run -d \
+  --name watchtower \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  containrrr/watchtower \
+  aichatfree
+```
+
 ## Environment Variables
 
 You can control the website through environment variables.
