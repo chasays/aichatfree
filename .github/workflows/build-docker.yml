@@ -8,6 +8,8 @@ jobs:
   build_docker:
     name: Build docker
     runs-on: ubuntu-latest
+    env: COREPACK_ENABLE_STRICT=0
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
