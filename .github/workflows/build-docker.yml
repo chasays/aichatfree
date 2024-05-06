@@ -8,6 +8,8 @@ jobs:
   build_docker:
     name: Build docker
     runs-on: ubuntu-latest
+    env:
+        COREPACK_ENABLE_STRICT: 0
 
     steps:
       - name: Checkout
@@ -24,8 +26,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
-        env:
-            COREPACK_ENABLE_STRICT: 0
         id: docker_build
         uses: docker/build-push-action@v4
         with:
